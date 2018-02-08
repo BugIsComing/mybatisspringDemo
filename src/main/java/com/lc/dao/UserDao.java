@@ -13,8 +13,14 @@ import java.util.Map;
 @Component
 public class UserDao {
 
+    /**
+     * 注意扫描和初始化，扫描是按照配置文件的定义顺序逐个扫描
+     */
     @Autowired
     private BaseDao baseDao;
+
+    @Autowired
+    private ZzDao zzDao;
 
     public UserDao() {
     }

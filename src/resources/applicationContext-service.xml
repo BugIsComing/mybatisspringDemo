@@ -9,6 +9,8 @@
 	<!--注明需要扫描的package-->
 	<context:component-scan base-package="com.lc.dao" />
 
+	<bean id = "zzDao" class="com.lc.dao.ZzDao"/>
+
 	<!-- 配置属性加载器 -->
 	<bean
 		class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
