@@ -45,13 +45,13 @@
 	</bean>
 
 	<!--如果在com.lc.dao.BaseDao类上面标注@Component，则不用在这里显示声明bean-->
-	<bean id="baseDao" class="com.lc.dao.BaseDao">
-		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
-	</bean>
+	<!--<bean id="baseDao" class="com.lc.dao.BaseDao">-->
+		<!--<property name="sqlSessionFactory" ref="sqlSessionFactory" />-->
+	<!--</bean>-->
 
-	<bean id="userDao" class="com.lc.dao.UserDao">
-		<!--如果使用了autowired则不用显示声明属性-->
+	<!--<bean id="userDao" class="com.lc.dao.UserDao">-->
+		<!--&lt;!&ndash;如果使用了autowired则不用显示声明属性&ndash;&gt;-->
 		<!--<property name="baseDao" ref = "baseDao"/>-->
-	</bean>
+	<!--</bean>-->
 
 </beans>

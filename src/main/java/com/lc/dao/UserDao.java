@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * @author ifly_lc
  */
-
+@Component
 public class UserDao {
 
     @Autowired
